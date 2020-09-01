@@ -1,1 +1,1 @@
-web: gunicorn lead-djangoreact.wsgi:application --log-file -
+web: gunicorn lead_manager_react_django.wsgi:application --log-file -
