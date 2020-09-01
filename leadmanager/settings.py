@@ -25,7 +25,7 @@ SECRET_KEY = '9l%%_3t0z*dxvmqdbw)k4z0y3*j+i(^*_e3&@dwwab(vf#us4t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lead-djangoreact.herokuapp.com', "127.0.0.1", 'localhost']
 
 
 # Application definition
@@ -131,3 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+import dj_database_url
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db) 
