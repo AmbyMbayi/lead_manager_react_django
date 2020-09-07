@@ -24,7 +24,7 @@ SECRET_KEY = '9l%%_3t0z*dxvmqdbw)k4z0y3*j+i(^*_e3&@dwwab(vf#us4t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lead-djangoreact.herokuapp.com', "127.0.0.1", 'localhost']
+ALLOWED_HOSTS = ['lead-djangoreact.herokuapp.com', "127.0.0.1", 'localhost', 'lead-manager-react-django.herokuapp.com']
 
 # Application definition
 
